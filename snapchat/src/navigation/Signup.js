@@ -48,7 +48,14 @@ export default class Signup extends Component {
     //{ console.log(' hello je suis la fonction data') }
   }
 
-
+  async onRegisterPress() {
+    const { email, password,  } = this.state;
+    console.log(email);
+    console.log(password);
+    await AsyncStorage.setItem("email", email);
+    await AsyncStorage.setItem("password", password);
+    this.props.navigation.navigate("Profil");
+  }
 
 	render() {
     
