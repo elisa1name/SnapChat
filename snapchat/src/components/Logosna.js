@@ -6,13 +6,13 @@ import {
    Image 
 } from 'react-native';
 
-export default class Logosna extends Component<{}> {
+export default class Logosna extends Component {
 	render(){
 		return(
 			<View style={styles.container}>
-				<Image  style={{width: 170, height: 170}}
+				<Image  style={styles.image}
           			source={require('../images/snapcode.png')}/>
-          		<Text style={styles.logoText}>Enregistre toi vite !</Text>	
+          		<Text style={styles.logoText}>register quickly !</Text>	
   			</View>
 			)
 	}
@@ -20,7 +20,7 @@ export default class Logosna extends Component<{}> {
 
 const styles = StyleSheet.create({
   container : {
-    flexGrow: 1,
+   
     justifyContent:'flex-end',
 		alignItems: 'center',
 		backgroundColor:  '#fffc00',
@@ -28,6 +28,11 @@ const styles = StyleSheet.create({
   logoText : {
   	marginVertical: 15,
   	fontSize:18,
-  	backgroundColor:  '#fffc00',
-  }
+		backgroundColor:  '#fffc00',
+	},
+	image: {
+	width: 220,
+	height: 220,
+	marginTop: 150
+	}
 });

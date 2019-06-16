@@ -6,11 +6,11 @@ import {
    Image 
 } from 'react-native';
 
-export default class Logo extends Component<{}> {
+export default class Logo extends Component {
 	render(){
 		return(
 			<View style={styles.container}>
-				<Image  style={{width: 170, height: 170}}
+				<Image  style={{width: 200, height: 200}}
           			source={require('../images/snapchat.png')}/>
           		<Text style={styles.logoText}>Welcome My Snapchat</Text>	
   			</View>
