@@ -1,37 +1,29 @@
-
-
 import React, { Component } from 'react';
 import {
   StyleSheet,
   View,
-  StatusBar 
+  StatusBar
 } from 'react-native';
+ 
 import Routes from './src/Routes';
-import axios from 'axios';
 
 
-
-export default class App extends Component {
-  
+export default class App extends Component   {
   render() {
     return (
       <View style={styles.container}>
         <StatusBar
-           backgroundColor="#1c313a"
-           barStyle="light-content"
-          />
-        <Routes />
+          backgroundColor="#002f6c" 
+          barStyle="light-content"
+        />
+        <Routes/>
       </View>
-    )
-  };
+    );
+  }
 }
-
+ 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-   backgroundColor:  '#fffc00',
-   paddingLeft: 60,
-   paddingRight: 60
-  },
+  }
 });
